@@ -54,12 +54,14 @@ extension ViewController: UIDocumentPickerDelegate {
             let tmp = try FileManager
                 .default
                 .url(for: .itemReplacementDirectory, in: .userDomainMask, appropriateFor: url, create: true)
-                .appendingPathComponent("the-file")
+                .appendingPathComponent(UUID().uuidString)
+                .appendingPathExtension(url.pathExtension)
             
             try FileManager.default.copyItem(at: url, to: tmp)
             
             print("Picked: \(url)")
             print("Copied to: \(tmp)")
+            print("Type: \(tmp.mimeType)")
             
             label.text = "Copied \(url.pathComponents.last ?? "''") locally ready to upload."
         } catch {
@@ -69,5 +71,17 @@ extension ViewController: UIDocumentPickerDelegate {
 
     func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
         print("Cancelled")
+    }
+}
+
+extension URL {
+    var mimeType: String {
+        guard let type = UTType(filenameExtension: pathExtension),
+              let mimeType = type.preferredMIMEType
+        else {
+            return "application/octet-stream"
+        }
+
+        return mimeType
     }
 }
