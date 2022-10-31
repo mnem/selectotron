@@ -13,9 +13,6 @@
 		BB0CA0912908649200B7D7C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0CA08F2908649200B7D7C1 /* Main.storyboard */; };
 		BB0CA0932908649900B7D7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0CA0922908649900B7D7C1 /* Assets.xcassets */; };
 		BB0CA0962908649900B7D7C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0CA0942908649900B7D7C1 /* LaunchScreen.storyboard */; };
-		BB0CA0A12908649A00B7D7C1 /* SelectotronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CA0A02908649A00B7D7C1 /* SelectotronTests.swift */; };
-		BB0CA0AB2908649A00B7D7C1 /* SelectotronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CA0AA2908649A00B7D7C1 /* SelectotronUITests.swift */; };
-		BB0CA0AD2908649A00B7D7C1 /* SelectotronUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CA0AC2908649A00B7D7C1 /* SelectotronUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		BB0CA0952908649900B7D7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB0CA0972908649900B7D7C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0CA09C2908649A00B7D7C1 /* SelectotronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectotronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0CA0A02908649A00B7D7C1 /* SelectotronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectotronTests.swift; sourceTree = "<group>"; };
 		BB0CA0A62908649A00B7D7C1 /* SelectotronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectotronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB0CA0AA2908649A00B7D7C1 /* SelectotronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectotronUITests.swift; sourceTree = "<group>"; };
-		BB0CA0AC2908649A00B7D7C1 /* SelectotronUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectotronUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				BB0CA0882908649200B7D7C1 /* Selectotron */,
-				BB0CA09F2908649A00B7D7C1 /* SelectotronTests */,
-				BB0CA0A92908649A00B7D7C1 /* SelectotronUITests */,
 				BB0CA0872908649200B7D7C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				BB0CA0972908649900B7D7C1 /* Info.plist */,
 			);
 			path = Selectotron;
-			sourceTree = "<group>";
-		};
-		BB0CA09F2908649A00B7D7C1 /* SelectotronTests */ = {
-			isa = PBXGroup;
-			children = (
-				BB0CA0A02908649A00B7D7C1 /* SelectotronTests.swift */,
-			);
-			path = SelectotronTests;
-			sourceTree = "<group>";
-		};
-		BB0CA0A92908649A00B7D7C1 /* SelectotronUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BB0CA0AA2908649A00B7D7C1 /* SelectotronUITests.swift */,
-				BB0CA0AC2908649A00B7D7C1 /* SelectotronUITestsLaunchTests.swift */,
-			);
-			path = SelectotronUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0CA0A12908649A00B7D7C1 /* SelectotronTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB0CA0AB2908649A00B7D7C1 /* SelectotronUITests.swift in Sources */,
-				BB0CA0AD2908649A00B7D7C1 /* SelectotronUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
